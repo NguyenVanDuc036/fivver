@@ -1,0 +1,239 @@
+.Banner{
+    position: relative;
+    z-index: 1;
+    .Banner__content{
+        .My_banner{
+            .item1{
+                background-image: url(../img/bg-hero-1-1792-x1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 750px !important;
+                position: relative;
+            }
+            .item2{
+                background-image: url(../img/bg-hero-2-1792-x1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 750px !important;
+                position: relative;
+            }
+            .item3{
+                background-image: url(../img/bg-hero-3-1792-x1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 750px !important;
+                position: relative;
+            }
+            .item4{
+                background-image: url(../img/bg-hero-4-1792-x1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 750px !important;
+                position: relative;
+            }
+            .item5{
+                background-image:url(../img/bg-hero-5-1792-x1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 750px !important;
+                position: relative;
+            }
+            .item{
+                height: auto;
+                .content{
+                    width: 50rem;
+                    color: white;
+                    position: absolute;
+                    top: 30%;
+                    left: 2rem;
+                    h1{
+                        font-size: 3.4rem;
+                        i{
+                            font-weight: normal;
+                        }
+                    }
+                    form{
+                        padding: 2rem 0;
+                        position: relative;
+                        i{
+                            position: absolute;
+                            color: gray;
+                            z-index: 2;
+                            font-size: 20px;
+                            left:2%;
+                        }
+                        input{
+                            font-size: 18px;
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                            padding: 12px 50px;
+                            width: 37rem;
+                            border: none;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        button{
+                            background-color: #1dbf73;
+                            color: white;
+                            width: 7rem;
+                            border-radius: none !important;
+                            border: none !important;
+                            border-top-right-radius: 5px !important;
+                            border-bottom-right-radius: 5px !important;
+                            padding: 12px 30px;
+                            font-size: 18px;
+                            font-weight: 600;
+                            &:hover{
+                                background: #19a463;
+                            }
+                            &:focus{
+                                outline: none !important;
+                                border: none !important;
+                                box-shadow: none !important;
+                            }
+                        }
+                    }
+                    span:nth-child(1){
+                        font-weight: 600;
+                    }
+                    .span-text{
+                        display: inline;
+                        margin-left: 1rem;
+                        span{
+                            padding: 5px 10px;
+                            border: 1px solid white;
+                            border-radius: 15px;
+                            font-size: 15px;
+                            font-weight: 600;
+                            transition: all 0.5s;
+                            &:hover{
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+                    }
+
+                }
+                .info{
+                    position: absolute;
+                    right: 2%;
+                    bottom: 5%;
+                    display: inline;
+                    i{
+                        font-size: 15px;
+                        margin-right: 5px;
+                        color: yellow;
+                    }
+                    span:nth-child(1){
+                        font-size: 20px;
+                        color: white;
+                    }
+                    span:nth-child(2){
+                        font-size: 20px;
+                        color: white;
+                        font-weight: 550;
+                    }
+                }
+            }
+        }
+    }
+}
+@include respon-to('extra-large1'){
+    .Banner .Banner__content .My_banner .item .content{
+        width: 42rem;
+        h1{
+            font-size: 2.8rem;
+        }
+        form{
+            input{
+                width: 30rem;
+            }
+        }
+    }
+}
+
+@include respon-to('large'){
+    .Banner .Banner__content .My_banner .item{
+        background-color: #023a15;
+        height: 460px !important;
+        background-image: none !important;
+        .content{
+            left: 7rem;
+            width: 75%;
+            top: 23%;
+            h1{
+                width: 97%;
+            }
+            form{
+                button{
+                    width: 90%;
+                    border-top-left-radius: 5px !important;
+                    border-bottom-left-radius: 5px !important;
+                }
+                input{
+                    width: 90%;
+                    border-top-right-radius: 5px !important;
+                    border-bottom-right-radius: 5px !important;
+                    margin-bottom: 1.5rem;
+                }
+                i{
+                    top: 24%;
+                }
+            }
+            .span-text{
+                display: none;
+            }
+            span{
+                display: none;
+            }
+        }
+        .info{
+            display: none;
+        }
+    }
+}
+@include respon-to('medium'){
+    .Banner .Banner__content .My_banner .item{
+        background-color: #023a15;
+        height: 515px !important;
+        background-image: none !important;
+    }
+} //659
+@include respon-to('small1'){
+    .Banner .Banner__content .My_banner .item{
+        height: 360px !important;
+        .content{
+            left: 1.5rem;
+            width: 100%;
+            top: 23%;
+            h1{
+                width: 80%;
+                font-size: 35px;
+            }
+        }
+    }
+}
+@include respon-to('small2'){
+    .Banner .Banner__content .My_banner .item{
+        height: 400px !important;
+        .content{
+            left: 1.5rem;
+            width: 100%;
+            top: 16%;
+            h1{
+                width: 70%;
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+.player .vp-title .vp-title-header {
+    display: none !important;
+}

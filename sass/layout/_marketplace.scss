@@ -1,0 +1,100 @@
+.marketplace{
+    .myMarketplace{
+        h1{
+            font-weight: 700;
+            color: #404145;
+            padding-bottom: 5rem;
+            padding-left: 28px;
+        }
+        ul{
+            list-style: none;
+            flex-wrap: wrap;
+            display: flex;
+            width: 98%;
+            margin: 0 auto;
+            li{
+                width: 20%;
+                padding: 0 10px 75px;
+                box-sizing: border-box;
+                text-align: center;
+                &:hover a p::before{
+                    width: 6rem;
+                    background-color: #1dbf73;
+                }
+                a{
+                    color:#222325;
+                    font-size: 18px;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    img{
+                        width: 4rem;
+                        margin-bottom: 3rem;
+                    }
+                    p{
+                        position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: -120%;
+                            right: 50%;
+                            transform: translateX(50%);
+                            background-color: #c5c6c9;
+                            height: 2px;
+                            width: 4rem;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respon-to('large'){
+    .marketplace{
+        .myMarketplace{
+            h1{
+                padding-bottom: 1rem !important;
+                padding-left: 28px;
+            }
+            ul{
+                li{
+                    padding-bottom: 1.5rem;
+                    width: 33.33%;
+                    a{
+                        font-size: 17px;
+                        img{
+                            width: 3.5rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    p{
+                        &::before{
+                            top: -47% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include respon-to('small1'){
+    .marketplace{
+        .myMarketplace{
+            h1{
+            }
+            ul{
+                li{
+                    padding-bottom: 1.5rem;
+                    width: 50%;
+                    p{
+                        &::before{
+                            top: -47% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

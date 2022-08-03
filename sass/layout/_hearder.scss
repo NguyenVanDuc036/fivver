@@ -1,0 +1,679 @@
+header{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+    .container-fluid{
+        .menu{
+            display: none;
+        }
+        .navbar{
+            .myBrand{
+                a{
+                    font-size: 35px;
+                    color: white ;
+                    font-weight: 780;
+                    i{
+                        color: #1dbf73;
+                        font-size: 8px;
+                    }
+                }
+                form{
+                    display: none;
+                }
+            }
+            .myNavbar{
+                .collapse{
+                    justify-content: flex-end;
+                }
+                ul{
+                    margin: 0 !important;
+                }
+                .nav-item{
+                    .nav-link{
+                        color: white;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                }
+                button{
+                    border: 1px white solid !important;
+                    padding: 4px 20px;  
+                    color: white;
+                    font-weight: 600;
+                    &:hover{
+                        background: #19a463;
+                        border: 1px #1dbf73 solid !important;
+                        color: black !important;
+                    }
+                }
+                
+            }
+        }
+        .Graphics{
+            display: none;
+        }
+        .Digital{
+            display: none;
+        }
+        .Writing{
+            display: none;
+        }
+        .Video{
+            display: none;
+        }
+        .Music{
+            display: none;
+        }
+        .Programming{
+            display: none;
+        }
+        .Data{
+            display: none;
+        }
+        .Business{
+            display: none;
+        }
+        .Lifestyle{
+            display: none;
+        }
+    }
+}
+@include respon-to('small'){
+    #header{
+        background-color: white !important;
+        color: black !important;
+        .container-fluid{
+            .navbar{
+                .myBrand{
+                    position: fixed;
+                    text-align: center !important;
+                    a{
+                        color: black !important;
+                    }
+                
+                }
+                // button{
+                //     z-index: 5;
+                // }
+            }
+        }
+    }
+}
+
+@include respon-to('extra-large1'){
+    #header{
+        .container-fluid{
+            .navbar{
+                .myNavbar{
+                    li:nth-child(3){
+                        display: none !important;
+                    }
+                    li:nth-child(4){
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respon-to('large'){
+    #header{
+        .container-fluid{
+            .navbar{
+                .myNavbar{
+                    li:nth-child(1){
+                        display: none !important;
+                    }
+                    li:nth-child(2){
+                        display: none !important;
+                    }
+                    li:nth-child(5){
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+@include respon-to('small'){
+    .scroll1{
+        background-color: white !important;
+        color: black !important;
+        .container-fluid{
+            .menu{
+                display: none !important;
+            }
+            .navbar{
+                .myBrand{
+                    position: fixed;
+                    text-align: center !important;
+                    a{
+                        color: black !important;
+                    }
+                    button{
+                        display: none !important;
+                    }
+                
+                }
+                // button{
+                //     z-index: 5;
+                // }
+            }
+        }
+    }
+}
+
+@include respon-to('extra-large1'){
+    .scroll1{
+        .container-fluid{
+            .navbar{
+                .myNavbar{
+                    li:nth-child(3){
+                        display: none !important;
+                    }
+                    li:nth-child(4){
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respon-to('large'){
+    .scroll1{
+        .container-fluid{
+            .navbar{
+                .myNavbar{
+                    li:nth-child(1){
+                        display: none !important;
+                    }
+                    li:nth-child(2){
+                        display: none !important;
+                    }
+                    li:nth-child(5){
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.scroll1{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    border-bottom:1px solid #95979d !important;
+    background-color: white;
+    color: #62646a;
+    transition: all 0.5s;
+    .container-fluid{
+        .menu{
+            display: none;
+        }
+        .navbar{
+            .collapse{
+                justify-content: flex-end;
+            }
+            .myBrand{
+                a{
+                    font-size: 35px;
+                    color: black !important;
+                    font-weight: 780;
+                    i{
+                        color: #19a463;
+                        font-size: 8px;
+                    }
+                } 
+            }
+            .myNavbar{
+                .nav-item{
+                    padding-right: 1rem;
+                    .nav-link{
+                        color: #62646a;
+                        font-weight: 650;
+                        font-size: 18px;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        transition: all 0.8s;
+                        &:hover{
+                            color: #1dbf73!important;
+                        }
+                    }
+                }
+                button{
+                    border: 1px #19a463 solid !important;
+                    padding: 4px 20px;  
+                    color: #19a463;
+                    font-weight: 600;
+                    &:hover{
+                        background: #19a463;
+                        border: 1px #19a463 solid !important;
+                        color: black !important;
+                    }
+                }
+                
+            }
+        }
+        .Graphics{
+            display: none;
+        }
+        .Digital{
+            display: none;
+        }
+        .Writing{
+            display: none;
+        }
+        .Video{
+            display: none;
+        }
+        .Music{
+            display: none;
+        }
+        .Programming{
+            display: none;
+        }
+        .Data{
+            display: none;
+        }
+        .Business{
+            display: none;
+        }
+        .Lifestyle{
+            display: none;
+        }
+    }
+}
+
+.scroll2{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    border-bottom:1px solid #95979d !important;
+    background-color: white;
+    color: #7a7d85;
+    transition: all 0.5s;
+    .container-fluid{
+        .menu{
+            $_this: &;
+            display: block;
+            padding: .5rem 2rem;
+            border-top:1px solid #95979d !important;
+            position: relative;
+            transition: all 0.5s;
+            transform: rotateX(360deg);
+            ul{ 
+                width: 90rem;
+                transition: all 0.5s;
+                $selector: nth(&,1);
+                margin: 0;
+                list-style: none !important;
+                justify-content: space-around;
+                li{
+                    transition: all 0.5s;
+                    .Writing{
+                        @include content();
+                        width: 70%;
+                        position: absolute;
+                        top: 100%;
+                        left: 26.5%;
+                        display: none;
+                    }
+                    .Digital{
+                        @include content();
+                        width: 50%;
+                        position: absolute;
+                        top: 100%;
+                        left: 15%;
+                        display: none;
+                    }
+                    
+                    .Video{
+                        @include content();
+                        width: 60%;
+                        position: absolute;
+                        top: 100%;
+                        left: 40.5%;
+                        display: none;
+                    }
+                    .Music{
+                        @include content();
+                        width: 45%;
+                        position: absolute;
+                        top: 100%;
+                        left: 52.5%;
+                        display: none;
+                    }
+                    .Programming{
+                        @include content();
+                        width: 45%;
+                        position: absolute;
+                        top: 100%;
+                        left : 31.5%;
+                        display: none;
+                    }
+                    .Data{
+                        @include content();
+                        width: 45%;
+                        position: absolute;
+                        top: 100%;
+                        left : 39%;
+                        display: none;
+                    }
+                    .Business{
+                        @include content();
+                        width: 45%;
+                        position: absolute;
+                        top: 100%;
+                        left : 46%;
+                        display: none;
+                    }
+                    .Lifestyle{
+                        @include content();
+                        width: 45%;
+                        position: absolute;
+                        top: 100%;
+                        left: 53%;
+                        display: none;
+                    }
+                    .Graphics{
+                        @include content();
+                        display: none;
+                        transition: all 0.5s;
+                    }
+                    a:nth-child(1){
+                        color: #7a7d85;
+                        font-size: 19px;
+                        position: relative;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                        &:hover::after{
+                            opacity: 1;
+                        }
+                        &::after{
+                            content: '';
+                            height: 3px;
+                            width: 100%;
+                            background: #19a463;
+                            display: block;
+                            position: absolute;
+                            bottom: -40%;
+                            opacity: 0;
+                            transition: all 0.6s;
+                        }
+                    }
+                }
+                .hover1:hover .Graphics{
+                    display: block;
+                }
+                .hover2:hover .Digital{
+                    display: block;
+                }
+                .hover3:hover .Writing{
+                    display: block;
+                }.hover4:hover .Video{
+                    display: block;
+                }
+                .hover5:hover .Music{
+                    display: block;
+                }
+                .hover6:hover .Programming{
+                    display: block;
+                }
+                .hover7:hover .Data{
+                    display: block;
+                }
+                .hover8:hover .Business{
+                    display: block;
+                }
+                .hover9:hover .Lifestyle{
+                    display: block;
+                }
+            }
+        }
+        .navbar{
+            .collapse{
+                justify-content: flex-end;
+            }
+            .myBrand{ 
+                a{
+                    font-size: 35px;
+                    color: black !important;
+                    font-weight: 780;
+                    i{
+                        color: white;
+                        font-size: 8px;
+                    }
+                }
+                form{
+                    opacity: 1;
+                    padding: 2rem 0;
+                    display: inline;
+                    position: relative;
+                    i{
+                        position: absolute;
+                        color: gray;
+                        z-index: 2;
+                        font-size: 20px;
+                        left: 4%;
+                        top: 36%;
+                    }
+                    input{
+                        position: relative;
+                        font-size: 18px;
+                        border:1px solid #95979d !important;
+                        /* border-top-left-radius: 5px; */
+                        /* border-bottom-left-radius: 5px; */
+                        padding: 6px 50px;
+                        width: 50%;
+                        border: none;
+                        width: 54%;
+                        margin-right: -4px;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    button{
+                        background-color: #1dbf73;
+                        color: white;
+                        border-radius: none !important;
+                        border: none !important;
+                        border-top-right-radius: 5px !important;
+                        border-bottom-right-radius: 5px !important;
+                        padding: 8px 26px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        &:hover{
+                            background: #19a463;
+                        }
+                        &:focus{
+                            outline: none !important;
+                            border: none !important;
+                            box-shadow: none !important;
+                        }
+                    }
+                }
+            }
+            .myNavbar{
+                .nav-item{
+                    margin-right: 1rem;
+                    .nav-link{
+                        color: black;
+                        font-weight: 600;
+                        font-size: 18px;
+                        padding: 0 !important;
+                        transition: all 0.8s;
+                        &:hover{
+                            color: #1dbf73!important;
+                        }
+                    }
+                }
+                button{
+                    border: 1px #19a463 solid !important;
+                    padding: 4px 20px;  
+                    color: #19a463;
+                    font-weight: 600;
+                    &:hover{
+                        background: #19a463;
+                        border: 1px #19a463 solid !important;
+                        color: #7a7d85;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@include respon-to('small'){
+    .scroll2{
+        background-color: white !important;
+        color: black !important;
+        border: none !important;
+        .container-fluid{
+            .menu{
+                display: none !important;
+            }
+            .navbar{
+                .myBrand{
+                    position: fixed;
+                    text-align: center !important;
+                    a{
+                        color: black !important;
+                    }
+                    form{
+                        display: none !important;
+                    }
+                
+                }
+                // button{
+                //     z-index: 5;
+                // }
+            }
+        }
+    }
+}
+
+@include respon-to('extra-large1'){
+    .scroll2{
+        .container-fluid{
+            .navbar{
+                .myBrand{ 
+                    form{
+                        button{
+                            display: none !important;
+                        }
+                        input{
+                            width: 15rem !important;
+                        }
+                    }
+                }
+                .myNavbar{
+                    li:nth-child(3){
+                        display: none !important;
+                    }
+                    li:nth-child(4){
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respon-to('small1'){
+    .scroll2{
+        .container-fluid{
+            .navbar{
+                .myBrand{ 
+                    form{
+                        button{
+                            display: none !important;
+                        }
+                        input{
+                            width: 60% !important;
+                        }
+                    }
+                }
+                .myNavbar{
+                    li:nth-child(3){
+                        display: none !important;
+                    }
+                    li:nth-child(4){
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respon-to('large'){
+    #header{
+        .container-fluid{
+            .navbar{
+                .myNavbar{
+                    li:nth-child(1){
+                        display: none !important;
+                    }
+                    li:nth-child(2){
+                        display: none !important;
+                    }
+                    li:nth-child(5){
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+  
+@include respon-to('extra-large2'){
+    .scroll2{
+        .container-fluid{
+            .Graphics{
+                display: none !important;
+            }
+            .Digital{
+                display: none !important;
+            }
+            .Writing{
+                display: none !important;
+            }
+            .Video{
+                display: none !important;
+            }
+            .Music{
+                display: none !important;
+            }
+            .Programming{
+                display: none !important;
+            }
+            .Data{
+                display: none !important;
+            }
+            .Business{
+                display: none !important;
+            }
+            .Lifestyle{
+                display: none !important;
+            }
+        }
+    }
+
+}

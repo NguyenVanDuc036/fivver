@@ -1,0 +1,103 @@
+.fib-banner{
+    background-color: #0d084d;
+    height: auto;
+    .container-fluid{
+        .text{
+            padding-top: 5rem;
+            padding-left: 40px;
+            color: white;
+            span:nth-child(2){
+                background: #584aff;
+                border-radius: 20px;
+                padding: 2px 10px;
+                font-size: 12px;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+            h1{
+                display: inline;
+                font-size: 33px;
+                margin-bottom: 1.5rem;
+            }
+            h2{
+                font-size: 35px;
+                font-weight: 700;
+                padding-top: 1.4rem;
+                padding-bottom: 1.4rem;
+                width: 80%;
+                i{
+                    font-weight: 200  !important;
+                }
+            }
+            p{
+                font-size: 20px;
+            }
+            ul{
+                margin-bottom: 3rem;
+                list-style: none;
+                li{
+                    padding: 5px  0;
+                }
+                i{
+                    font-size: 25px;
+                    color: rgb(122, 125, 133);
+                    margin-right: 0.5rem;
+                }
+                list-style-type: none;
+                div{
+                    display: inline;
+                    p{
+                        display: inline;
+                    }
+                }
+            }
+            button{
+                border: none;
+                background-color: #1dbf73;
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 8px 30px;
+                border-radius: 5px;
+                margin-bottom: 2rem;
+            }
+        }
+        .imgs{
+            padding-top: 5rem !important;
+            img{
+                width: 95%;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@include respon-to('small1'){
+    .fib-banner{
+        .container-fluid{
+            .text{
+                span:nth-child(2){
+                    font-size: 11px;
+                }
+                h1{
+                    font-size: 28px;
+                }
+                h2{
+                    font-size: 30px;
+                    width: 80%;
+                }
+                p{
+                    font-size: 18px;
+                }
+                ul{
+                    i{
+                        font-size: 23px;
+                    }
+                }
+                button{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.testimonial{
+    margin: 3rem 0;
+    .myTestimonial{
+        width: 95%;
+        margin: 0 auto;
+        padding: 4rem 0;
+        .row{
+            align-items: center;
+        }
+        .imgs{
+            text-align: center;
+            img:nth-child(1){
+                width: 15%;
+                position: absolute;
+                z-index: 1;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            img:nth-child(2){
+                width: 90%;
+                position: relative;
+                display: inline;
+            }
+        }
+        .text{
+            padding: 0 35px;
+            .top{
+                margin-bottom: 1.5rem;
+                margin-top: 1.5rem;
+            }
+            h5{
+                display: inline;
+                font-weight: 400;
+                color: #7a7d85;
+                font-size: 27px;
+                padding-bottom: 16px;
+                padding-right: 1rem;
+            }
+            span{
+                border-left: 1px solid gray;
+                padding-left: 1rem;
+            }
+            img{
+                width: 15%;
+                display: inline;
+            }
+            i{
+                font-size: 2rem;
+                margin-top: 2rem;
+                color: #003912;
+                font-weight: 500;
+            }
+        }
+    }
+    @include owl-nav(-2%,104%,43%);
+}
+
+@include respon-to('extra-large1'){
+    .testimonial{
+        margin: 3rem 0;
+        .myTestimonial{
+            .text{
+                .top{
+                }
+                h5{
+                    font-size: 23px;
+                }
+                span{
+                    border-left: 1px solid gray;
+                    padding-left: 1rem;
+                }
+                img{
+                    width: 20%;
+                    display: inline;
+                }
+                i{
+                    font-size: 25px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

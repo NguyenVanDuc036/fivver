@@ -1,0 +1,117 @@
+@mixin span(){
+    margin-left: 5px;
+    font-size: 12px;
+    color: #ff62ad;
+    font-weight: 700;
+    background: white;
+    border: 1px solid #ff62ad;
+    padding: 0 7px;
+    border-radius: 15px;
+}
+
+@mixin content(){
+            opacity: 1;
+            display: block;
+            position: absolute;
+            width: 93%;
+            margin: 0 auto;
+            background: white;
+            top: 100%;
+            .content{
+                border: 1px gray solid;
+                margin: 0;
+                ul{
+                    list-style: none;
+                    padding-left: 2rem;
+                    li{
+                        line-height: 2.5rem;
+                    }
+                    a{
+                        font-size: 18px;
+                        color: #95979d;
+                        &:hover{
+                            text-decoration: none;
+                            color: #7a7d85;
+                        }
+                        &:hover::after{
+                            opacity: 0;
+                        }
+                        p{
+                            color:#4A73E8;
+                            display: inline;
+                        }
+                    }
+                    h1{
+                        font-size: 20px;
+                        color: black;
+                        padding-top: 1.5rem;
+                    }
+                    span{
+                        @include span();
+                    }
+                }
+            }
+}
+
+@mixin owl-nav($left, $width,$top) {
+    .owl-nav{
+        position: absolute;
+        top: $top;
+        left: $left;
+        width: $width !important;
+    button:nth-child(1){
+        float: left;
+        background: white !important;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;    
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20,23,28,0.1  );       
+        transition: all 0.8s;                              
+        &:hover span{
+            color: black !important;
+        }
+        &:focus{
+            outline: 0px !important;
+            outline: 0px auto !important;
+        }
+        &:hover{
+            box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+        }
+    }
+    button:nth-child(2){
+        float: right;
+        background: white !important;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20,23,28,0.1  );       
+        transition: all 0.8s;   
+        &:hover span{
+            color: black !important;
+        }
+        &:focus{
+            outline: 0px !important;
+            outline:0px auto !important;
+        }
+        &:hover{
+            box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+        }
+    }
+            span{
+                font-size: 50px;
+                line-height: 25px;
+                color: black !important;
+            }
+    }
+}
+
+@mixin respon-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint ){
+        $value : map-get($map: $breakpoints, $key: $breakpoint );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }@else{
+        @warn "Không tồn tại breakpoints";
+    }
+}

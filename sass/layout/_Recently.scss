@@ -1,0 +1,206 @@
+.Recently{
+        h1{
+        padding-left: 40px;
+        padding-bottom: 1rem;
+    }
+    .container-fluid{
+        padding: 0 2.5rem;
+    }
+    .myRecently{
+        overflow: hidden;
+        .item{
+            &:hover .owl-nav button{
+                width: 30px !important;
+            }
+            &:hover .owl-nav span{
+                font-size: 30px !important;
+            }
+            .owl-nav{
+                transition: all 0.9s;
+                position: absolute;
+                top: 32%;
+                left: -2%;
+                width: 104% !important;
+                opacity: 1;
+                button:nth-child(1){
+                    float: left;
+                    border-radius: 0;
+                    border-top-right-radius: 50% !important;
+                    border-bottom-right-radius: 50% !important;
+                    background: white !important;
+                    width: 0;
+                    height: 30px !important;  
+                    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20,23,28,0.1  );       
+                    transition: all 0.3s;                              
+                    &:hover span{
+                        color: black !important;
+                    }
+                    &:focus{
+                        outline: 0px !important;
+                        outline: 0px auto !important;
+                    }
+                    &:hover{
+                        box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+                    }
+                }
+                button:nth-child(2){
+                    float: right;
+                    border-radius: 0;
+                    border-top-left-radius: 50% !important;
+                    border-bottom-left-radius: 50% !important;
+                    background: white;
+                    width: 0;
+                    height: 30px !important; 
+                    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20,23,28,0.1  );       
+                    transition: all 0.3s;   
+                    &:hover span{
+                        color: black !important;
+                    }
+                    &:focus{
+                        outline: 0px !important;
+                        outline:0px auto !important;
+                    }
+                    &:hover{
+                        box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+                    }
+                }
+                span{
+                    font-size: 0;
+                    line-height: 20px;
+                    color: black !important;
+                    font-weight: 100;
+                }
+            }
+            .card{
+                .card-body{
+                    padding: 12px 20px !important;
+                    .info{
+                        img{
+                            border-radius: 50%;
+                            width: 15%;
+                            height: 90%;
+                            margin-right: 0.5rem;
+                        }
+                        .text{
+                            padding-bottom: 1rem;
+                            margin-top: -8px;
+                            line-height: 20px;
+                            a{
+                                color: #222325; 
+                                font-weight: 500;
+                                &:hover{
+                                    text-decoration: underline 1px;
+                                }
+                            }
+                            span{
+                                color: #b5b6ba;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .normal{
+                        a{
+                            color:  #222325;
+                           font-size: 18px;
+                           font-weight: 500;
+                           padding-bottom: 1rem;
+                           transition: all 0.8s;
+                           &:hover{
+                               text-decoration: none;
+                               color:#1dbf73;
+                           }
+                       }
+                       i{
+                           color: #ffbe5b;
+                           margin-right: 5px;
+                       }
+                       span{
+                           color: #ffbe5b;
+                           font-weight: 500;
+                           font-size: 18px;
+                       }
+                       p{
+                           display: inline;
+                           color: #b5b6ba;
+                           font-weight: 400;
+                           display: inline;
+                           padding-right: 2.4rem;
+                       }
+                       img{
+                           width: 40%;
+                           display: inline;
+                           padding-bottom: 6px;
+                       }
+                    }
+                    .pro{
+                        a{
+                            color:  #222325;
+                           font-size: 18px;
+                           font-weight: 500;
+                           padding-bottom: 1rem;
+                           transition: all 0.8s;
+                           &:hover{
+                               text-decoration: none;
+                               color: #02c2a9;
+                           }
+                       }
+                       i{
+                        color: #02c2a9;
+                           margin-right: 5px;
+                       }
+                       span{
+                        color: #02c2a9;
+                           font-weight: 500;
+                           font-size: 18px;
+                       }
+                       p{
+                           display: inline;
+                           color: #b5b6ba;
+                           font-weight: 400;
+                           display: inline;
+                           padding-right: 2.4rem;
+                       }
+                       img{
+                           width: 40%;
+                           display: inline;
+                           padding-bottom: 6px;
+                       }
+                    }
+                    
+                }
+            }
+            .card-footer{
+                padding: 9px 12px;
+                background-color: white;
+                i{
+                    color: #b5b6ba;
+                    font-size: 20px;
+                    margin-right: 4rem;
+                }
+            }
+            span{
+                color: #62646a;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            p{
+                color: #62646a;
+                font-size: 18px;
+                display: inline;
+                text-transform: uppercase;
+            }
+        }
+        @include owl-nav(1%,98%,43%);
+    }
+    
+}
+
+@keyframes van {
+    0%{
+      transform: translateX();
+    }5%{
+      transform: translateX();
+    }100%{
+      transform:  translateX();
+    }
+}

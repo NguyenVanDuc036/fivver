@@ -1,0 +1,102 @@
+.signup{
+    padding: 5rem 0;
+    .signup__content{
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        height: 450px;
+        background-image: url(../img/bg-signup-1400-x1.png);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        // img{
+        //     width: 100%;
+        // }
+        .signup-text{
+            color: white;
+            position: absolute;
+            width: 50%;
+            top: 20%;
+            left: 7%;
+            h2{
+                font-size: 3.5rem;
+                padding-bottom: 2rem;
+            }
+            
+            button{
+                border: none;
+                background-color: #1dbf73;
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 7px 30px;
+                border-radius: 5px;
+                &:hover{
+                    background: #19a463;
+                }
+            }
+        }
+    }
+}
+@include respon-to('extra-large1'){
+    .signup{
+        .signup__content{
+            height: 380px;
+            .signup-text{
+                width: 38rem;
+                left: 4%;
+                h2{
+                    font-size: 2.8rem;
+                }
+            }
+        }
+    }
+}
+@include respon-to('large'){
+    .signup{
+        .signup__content{
+            height: 305px;
+            background-color: #45091b;
+            background-image: none !important;
+            .signup-text{
+                width: 75%;
+                left: 4%;
+                h2{
+                    font-size: 2.7rem;
+                }
+            }
+        }
+    }
+}
+@include respon-to('medium'){
+    .signup{
+        .signup__content{
+            height: 400px;
+            background-color: #45091b;
+            background-image: none !important;
+            .signup-text{
+                width: 75%;
+                left: 4%;
+                h2{
+                    font-size: 2.7rem;
+                }
+            }
+        }
+    }
+}
+@include respon-to('small1'){
+    .signup{
+        .signup__content{
+            height: 300px;
+            background-color: #45091b;
+            background-image: none !important;
+            .signup-text{
+                width: 90%;
+                left: 4%;
+                h2{
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}

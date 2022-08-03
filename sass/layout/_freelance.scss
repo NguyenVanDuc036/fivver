@@ -1,0 +1,101 @@
+.freelance{
+    background-color: #f1fdf7;
+    height: auto;
+    margin-bottom: 6rem;
+    .myFreelance{
+        width: 95%;
+        margin: 0 auto;
+        .content{
+        margin-top: 8rem;
+            h1{
+                font-size: 2.3rem;
+                width: 100%;
+                padding-bottom: 1rem;
+                font-weight: 750;
+            }
+            .text{
+                width: 47%;
+                .content-text{
+                    padding-right: 25%;
+                }
+                padding-top: 7rem;
+                ul{
+                    list-style-type: none;
+                    li{
+                        i{
+                            font-size: 23px;
+                            color: rgb(122, 125, 133);
+                            margin-right: 10px;
+                            padding-bottom: 10px;
+                        }
+                        display: inline;
+                        h3{
+                            display: inline;
+                            font-size: 22px;
+                        }
+                        p{
+                            font-size: 19px;
+                            color: #62646a;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+            .imgs{
+                align-self: center;
+                img:nth-child(1){
+                    width: 12%;
+                    position: absolute;
+                    top: 35%;
+                    left: 57%;
+                    transform: translate(-50%);
+                    z-index: 1;
+                }
+                img:nth-child(2){
+                    width: 100%;
+                    position: relative !important;
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@include respon-to('extra-large1'){
+    .freelance{
+        .myFreelance{
+            .content{
+                .text{
+                    .content-text{
+                        padding-right: 8% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respon-to('large'){
+    .freelance{
+        .myFreelance{
+            .content{
+                .text{
+                    .content-text{
+                        padding-right:0 !important ;
+                    }
+                }
+            }
+        }
+    }
+}
+@include respon-to('small1'){
+    .freelance{
+        .myFreelance{
+            .content{
+                h1{
+                    font-size: 2rem !important;
+                }
+            }
+        }
+    }
+}

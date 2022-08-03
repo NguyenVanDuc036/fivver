@@ -1,0 +1,98 @@
+.logo-maker{
+    margin-bottom: 5rem;
+    .logo-maker__content{
+        background-color: #4a73e8;
+        height: 310px;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        // .row{
+        //     position: relative;
+        // }
+        .text{
+            padding-left: 6.5rem;
+            padding-top: 2rem;
+            color: white;
+            z-index: 3;
+            .first-text{
+                b{
+                    font-size: 30px;
+                }
+                span{
+                    font-size: 30px;
+                }
+                p{
+                    display: inline;
+                    font-size: 13px;
+                    font-weight: 650;
+                }
+            }
+            h1{
+                width: 30rem;
+                i{
+                    font-weight: normal !important;
+                }
+                padding-top: 1rem;
+            }
+            p{
+                font-size: 20px;
+                padding-bottom: 1rem;
+            }
+            a{
+                text-decoration: none;
+                color: #4a73e8;
+                background-color: white;
+                font-weight: 600;
+                font-size: 18px;
+                border-radius: 5px;
+                padding: 10px 35px;
+                
+                &:hover{
+                    text-decoration: none;
+                    background-color: #d4defb;
+                }
+            }
+        }
+        .desktop-image{
+            position: absolute;
+            top: 0;
+            z-index: 3;
+            right: 2rem;
+            img{
+                height: 300px;
+            }
+        }
+    }
+}
+@include respon-to('large'){
+    .logo-maker__content{
+        height: 600px !important;
+        background-image: url(../img/logo-maker-banner-tablet-852-2x.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        .desktop-image{
+            display: none;
+            img{
+                display: none;
+            }
+        }
+    }
+}
+@include respon-to('extra-large'){
+    .logo-maker__content{
+        .text{
+            padding-left: 2.5rem !important;
+        }
+    }
+}
+
+@include respon-to('small1'){
+    .logo-maker__content{
+        height: 600px !important;
+        background-image: url(../img/logo-maker-banner-tablet-852-2x.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
